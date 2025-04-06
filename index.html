@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ITishniki – IT школа для дітей | Програмування, GameDev, Веб-розробка</title>
+   <meta name="description"
+      content="Навчайся програмуванню в IT школі ITishniki! Курси для дітей до 16 років: Python, Unity, веб-розробка, дизайн. Перший урок безкоштовно. Формати: групові, дуо, індивідуальні.">
+   <meta name="keywords"
+      content="IT школа для дітей, програмування для дітей, Python для дітей, Unity курси, веб-розробка для школярів, IT курси для підлітків, онлайн школа програмування, дизайн для дітей, навчання програмуванню, айтішники школа">
+   <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+   <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+   <main>
+      <section class="hero">
+         <div class="hero__row">
+            <div class="hero-bg">
+               <div class="hero-bg__light"></div>
+               <div class="hero-bg__dark"></div>
+            </div>
+            <header class="header">
+               <div class="header__row">
+                  <div class="header__container container">
+                     <div class="header__logo">
+                        <img src="./images/logo.png" alt="logo">
+                     </div>
+                     <div class="header__text">
+                        <ul class="header__menu">
+                           <li class="header__list"><a href="#about">Про нас</a></li>
+                           <li class="header__list"><a href="#product">Навчання</a></li>
+                           <li class="header__list"><a href="#testimonials">Відгуки</a></li>
+                        </ul>
+                        <a href="#" class="header__button">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.2652 15.5 20.5196 15.6054 20.7071 15.7929C20.8946 15.9804 21 16.2348 21 16.5V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21C15.4913 21 11.1673 19.2089 7.97918 16.0208C4.79107 12.8327 3 8.50868 3 4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H7.5C7.76522 3 8.01957 3.10536 8.20711 3.29289C8.39464 3.48043 8.5 3.73478 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
+                                 fill="#030919" />
+                           </svg>
+                           <p>0 507 768 661</p>
+                        </a>
+                        <div class="header-burger">
+                           <div class="header-burger__item"></div>
+                           <div class="header-burger__item"></div>
+                           <div class="header-burger__item"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <div class="hero__container container">
+               <div class="hero-left">
+                  <h1 class="hero-left__title">
+                     ITishniki – школа програмування для дітей
+                  </h1>
+                  <div class="hero-left__img">
+                     <img src="./images/heroLeft.png" alt="programmer">
+                  </div>
+                  <p class="hero-left__paragraph">
+                     Освой розробку ігор, створюй власні сайти та прокачуй дизайн-навички в ITishniki! Навчайся з нуля
+                     під керівництвом досвідчених менторів і стань справжнім IT-спеціалістом уже в школі.
+                  </p>
+               </div>
+               <div class="hero-right">
+                  <div class="hero-right__top">
+                     <p>Навчайся</p>
+                     <p>Навчайся</p>
+                     <p>Навчайся</p>
+                  </div>
+                  <div class="hero-right__img">
+                     <img src="./images/heroRight.png" alt="display">
+                  </div>
+                  <div class="hero-right__bottom">
+                     <p>Розвивайся</p>
+                     <p>Розвивайся</p>
+                     <p>Розвивайся</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="about" id="about">
+         <div class="about__row">
+            <div class="about__container container">
+               <div class="about-header">
+                  <div class="about-header__text">
+                     <h2 class="about-header__title">
+                        <span>ITishniki</span> – школа, яка відкриває двері в IT-світ
+                     </h2>
+                     <p class="about-header__paragraph">
+                        Ми створили ITishniki, щоб дати дітям реальні знання з програмування та дизайну. Ми допомагаємо
+                        школярам розвивати логічне мислення, творчі навички та готують до майбутньої кар'єри в IT.
+                     </p>
+                  </div>
+                  <div class="about-header__img">
+                     <img src="./images/aboutHeader.png" alt="image programmer">
+                  </div>
+               </div>
+               <div class="about-footer">
+                  <div class="about-footer__img">
+                     <img src="./images/aboutFooter.png" alt="image keyboard">
+                  </div>
+                  <ul class="about-footer__menu">
+                     <li class="about-footer__list">Практичні проєкти замість сухої теорії</li>
+                     <li class="about-footer__list">Маленькі групи для персональної уваги</li>
+                     <li class="about-footer__list">Викладачі – досвідчені IT-спеціалісти</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="product" id="product">
+         <div class="product-bg">
+            <div class="product-bg__light"></div>
+            <div class="product-bg__dark"></div>
+         </div>
+         <div class="product__container container">
+            <div class="product__row">
+               <div class="product-item">
+                  <h2 class="product-item__title title">
+                     Розробка ігор –
+                     створи <span>власну гру</span>!
+                  </h2>
+                  <p class="product-item__paragraph">
+                     Поринь у світ розробки ігор, вивчаючи найпопулярніші технології
+                  </p>
+                  <div class="product-item__button">
+                     <p>План навчання</p>
+                     <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L10 10L19 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                     </svg>
+                  </div>
+                  <div class="product-item-plan">
+                     <h3 class="product-item-plan__title">1. Введення у веб-розробку та дизайн (1 місяць)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Як працюють сайти: клієнт-сервер, браузери
+                        </li>
+                        <li class="product-item-plan__list">
+                           Основи UI/UX: що робить сайт зручним
+                        </li>
+                        <li class="product-item-plan__list">
+                           Введення у Figma: інтерфейс, базові інструменти
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">2. HTML + CSS (2 місяці)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Основні теги HTML: структура сторінки
+                        </li>
+                        <li class="product-item-plan__list">
+                           Стилізація з CSS: кольори, шрифти, розташування елементів
+                        </li>
+                        <li class="product-item-plan__list">
+                           Flexbox та Grid: зручна верстка
+                        </li>
+                        <li class="product-item-plan__list">
+                           Створення першого сайту
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">3. Веб-дизайн у Figma (1 місяць)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Створення прототипів та макетів
+                        </li>
+                        <li class="product-item-plan__list">
+                           Робота з сітками та компонентами
+                        </li>
+                        <li class="product-item-plan__list">
+                           Адаптивний дизайн
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">4. JavaScript (3 місяці)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Змінні, функції, події
+                        </li>
+                        <li class="product-item-plan__list">
+                           Анімації та інтерактивність
+                        </li>
+                        <li class="product-item-plan__list">
+                           DOM та керування елементами
+                        </li>
+                        <li class="product-item-plan__list">
+                           Основи роботи з API
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">5. Python + Flask/Django (3 місяці)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Введення в програмування на Python
+                        </li>
+                        <li class="product-item-plan__list">
+                           Серверна логіка та бази даних
+                        </li>
+                        <li class="product-item-plan__list">
+                           Створення простого backend для сайту
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">6. Підсумковий проект (2 місяці)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Командна робота над повноцінним сайтом
+                        </li>
+                        <li class="product-item-plan__list">
+                           Захист проекту та презентація
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="product-item-result">
+                     <h3 class="product-item-result__title">
+                        Що отримаєш після курсу?
+                     </h3>
+                     <ul class="product-item-result__menu">
+                        <li class="product-item-result__list">Власну гру, яку можна завантажити в Google Play</li>
+                        <li class="product-item-result__list">Розуміння логіки ігрового процесу та основи кодування</li>
+                        <li class="product-item-result__list">Базові навички роботи в геймдев-індустрії</li>
+                     </ul>
+                  </div>
+                  <div class="product-item__order button">
+                     Записатись
+                  </div>
+                  <div class="product-item__bg">
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                  </div>
+               </div>
+               <div class="product-item product-item__dark">
+                  <h2 class="product-item__title title">
+                     Розробка ігор –
+                     створи власну гру!
+                  </h2>
+                  <p class="product-item__paragraph">
+                     Поринь у світ розробки ігор, вивчаючи найпопулярніші технології
+                  </p>
+                  <div class="product-item__button">
+                     <p>План навчання</p>
+                     <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L10 10L19 1" stroke="#030919" stroke-width="2" stroke-linecap="round"
+                           stroke-linejoin="round" />
+                     </svg>
+                  </div>
+                  <div class="product-item-plan">
+                     <h3 class="product-item-plan__title">1. Введение в разработку игр (1 месяц)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Основы гейм-дизайна и игровых механик
+                        </li>
+                        <li class="product-item-plan__list">
+                           Как работают игры: игровой цикл, графика, физика
+                        </li>
+                        <li class="product-item-plan__list">
+                           Знакомство с Pygame (для 2D) и Unity (для 3D)
+                        </li>
+                        <li class="product-item-plan__list">
+                           Создание первого простого игрового прототипа
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">2. Python + Pygame – Разработка 2D-игр (3 месяца)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Создание окон, спрайтов и объектов
+                        </li>
+                        <li class="product-item-plan__list">
+                           Управление персонажем, столкновения и анимация
+                        </li>
+                        <li class="product-item-plan__list">
+                           Добавление звуков и эффектов
+                        </li>
+                        <li class="product-item-plan__list">
+                           Разработка своей 2D-игры (например, платформер или арканоид)
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">3. Unity + C# – Разработка 3D-игр (3 месяца, для 12–16 лет)
+                     </h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Интерфейс Unity и работа с 3D-объектами
+                        </li>
+                        <li class="product-item-plan__list">
+                           Основы C# для программирования логики игры
+                        </li>
+                        <li class="product-item-plan__list">
+                           Физика, анимация, искусственный интеллект
+                        </li>
+                        <li class="product-item-plan__list">
+                           Разработка своей 3D-игры (например, шутер или приключение)
+                        </li>
+                     </ul>
+                     <h3 class="product-item-plan__title">4. Итоговый проект (3 месяца)</h3>
+                     <ul class="product-item-plan__menu">
+                        <li class="product-item-plan__list">
+                           Разработка концепции игры
+                        </li>
+                        <li class="product-item-plan__list">
+                           Создание уровней, персонажей и механик
+                        </li>
+                        <li class="product-item-plan__list">
+                           Финальное тестирование и презентация проекта
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="product-item-result">
+                     <h3 class="product-item-result__title">
+                        Що отримаєш після курсу?
+                     </h3>
+                     <ul class="product-item-result__menu">
+                        <li class="product-item-result__list">Власну гру, яку можна завантажити в Google Play</li>
+                        <li class="product-item-result__list">Розуміння логіки ігрового процесу та основи кодування</li>
+                        <li class="product-item-result__list">Базові навички роботи в геймдев-індустрії</li>
+                     </ul>
+                  </div>
+                  <div class="product-item__order button">
+                     Записатись
+                  </div>
+                  <div class="product-item__bg">
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                     <span>Розробка</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="pricing">
+         <div class="pricing__container container">
+            <div class="pricing__image">
+               <img src="./images/price.png" alt="">
+            </div>
+
+            <div class="pricing__content">
+               <h2 class="pricing__title title">
+                  ВАРТІСТЬ НАВЧАННЯ У <span class="pricing__highlight">ITISHNIKI</span>
+               </h2>
+
+               <div class="pricing__accordion">
+                  <div class="pricing__accordion-item">
+                     <div class="pricing__accordion-header" data-accordion="item1">
+                        Групові заняття
+                        <span class="pricing__accordion-icon">
+                           <svg width="33" height="19" viewBox="0 0 33 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 2L16.5 17L31 2" stroke="#030919" stroke-width="3" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </span>
+                     </div>
+                     <div class="pricing__accordion-content" id="item1">
+                        <div class="pricing__accordion-inner">
+                           <p>проходять у малих групах від 3 до 10 осіб, що створює комфортну атмосферу для навчання.
+                              Такий формат допомагає розвивати командні навички та сприяє швидкому засвоєнню матеріалу
+                           </p>
+                           <div class="pricing__price">3000грн/міс </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="pricing__accordion-item">
+                     <div class="pricing__accordion-header" data-accordion="item2">
+                        Дуо-заняття
+                        <span class="pricing__accordion-icon">
+                           <svg width="33" height="19" viewBox="0 0 33 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 2L16.5 17L31 2" stroke="#030919" stroke-width="3" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </span>
+                     </div>
+                     <div class="pricing__accordion-content" id="item2">
+                        <div class="pricing__accordion-inner">
+                           <p>це навчання у парах, яке поєднує переваги індивідуального підходу та динаміки групових
+                              занять. Оптимальний варіант для тих, хто цінує баланс між особистою увагою викладача та
+                              роботою в команді</p>
+                           <div class="pricing__price">400грн/за урок</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="pricing__accordion-item">
+                     <div class="pricing__accordion-header" data-accordion="item3">
+                        Індивідуальні уроки
+                        <span class="pricing__accordion-icon open">
+                           <svg width="33" height="19" viewBox="0 0 33 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2 2L16.5 17L31 2" stroke="#030919" stroke-width="3" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </span>
+                     </div>
+                     <div class="pricing__accordion-content" id="item3" style="height: auto;">
+                        <div class="pricing__accordion-inner">
+                           <p>дозволяють максимально зосередитися на вашому рівні підготовки. Персоналізований підхід та
+                              гнучкий графік допоможуть досягти результатів швидше</p>
+                           <div class="pricing__price">600грн/за урок</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="road">
+         <div class="road__container container">
+            <div class="road__row">
+               <h2 class="road__title title">
+                  Як ми приводимо до <span>результату</span>
+               </h2>
+               <div class="road__img">
+                  <img src="./images/road.png" alt="Як ми приводимо до результату">
+               </div>
+               <div class="road__items">
+                  <div class="road-item">
+                     <div class="road-item__icon">
+                        <img src="./images/roadBigIcon (1).svg" alt="Icon">
+                     </div>
+                     <h3 class="road-item__title">
+                        100% практика
+                     </h3>
+                     <p class="road-item__paragraph">
+                        Кожен урок містить реальні проєкти
+                     </p>
+                  </div>
+                  <div class="road-item">
+                     <div class="road-item__icon">
+                        <img src="./images/roadBigIcon (2).svg" alt="Icon">
+                     </div>
+                     <h3 class="road-item__title">
+                        Професійні ментори
+                     </h3>
+                     <p class="road-item__paragraph">
+                        Навчання від практиків IT-індустрії
+                     </p>
+                  </div>
+                  <div class="road-item">
+                     <div class="road-item__icon">
+                        <img src="./images/roadBigIcon (3).svg" alt="Icon">
+                     </div>
+                     <h3 class="road-item__title">
+                        Індивідуальний підхід
+                     </h3>
+                     <p class="road-item__paragraph">
+                        Підбираємо курс відповідно до рівня знань
+                     </p>
+                  </div>
+                  <div class="road-item">
+                     <div class="road-item__icon">
+                        <img src="./images/roadBigIcon (4).svg" alt="Icon">
+                     </div>
+                     <h3 class="road-item__title">
+                        Результат
+                     </h3>
+                     <p class="road-item__paragraph">
+                        Кожен випускник створює власну гру або сайт
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="mentors">
+         <div class="mentors__container container">
+            <h2 class="mentors__title title">ТВІЙ МЕНТОР В <span>IT</span></h2>
+
+            <div class="mentors__slider js-mentors-slider">
+               <div class="mentors__slide">
+                  <div class="mentor-card">
+                     <div class="mentor-card__image">
+                        <img src="./images/mentor1.png" alt="Ментор">
+                     </div>
+                     <div class="mentor-card__content">
+                        <span class="mentor-card__badge">5+ років в IT</span>
+                        <h3 class="mentor-card__name">АНДРІЙ ПАВЛЮК</h3>
+                        <p class="mentor-card__desc">Спеціалізується на Python, Unity та веб-технологіях...</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="mentors__slide">
+                  <div class="mentor-card">
+                     <div class="mentor-card__image">
+                        <img src="./images/mentor1.png" alt="Ментор">
+                     </div>
+                     <div class="mentor-card__content">
+                        <span class="mentor-card__badge">5+ років в IT</span>
+                        <h3 class="mentor-card__name">АНДРІЙ ПАВЛЮК</h3>
+                        <p class="mentor-card__desc">Спеціалізується на Python, Unity та веб-технологіях...</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="mentors__slide">
+                  <div class="mentor-card">
+                     <div class="mentor-card__image">
+                        <img src="./images/mentor1.png" alt="Ментор">
+                     </div>
+                     <div class="mentor-card__content">
+                        <span class="mentor-card__badge">5+ років в IT</span>
+                        <h3 class="mentor-card__name">АНДРІЙ ПАВЛЮК</h3>
+                        <p class="mentor-card__desc">Спеціалізується на Python, Unity та веб-технологіях...</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="testimonials" id="testimonials">
+         <div class="testimonials__container container">
+            <h2 class="testimonials__title title">НАШІ УЧНІ ВЖЕ СТВОРЮЮТЬ <span>ВЛАСНІ</span> ІГРИ ТА САЙТИ!</h2>
+
+            <div class="testimonials__nav">
+               <button class="testimonials__nav-btn testimonials__nav-btn--prev">
+                  <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M11 1L1 10L11 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  </svg>
+               </button>
+               <button class="testimonials__nav-btn testimonials__nav-btn--next">
+                  <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1 19L11 10L1 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  </svg>
+               </button>
+            </div>
+
+            <div class="testimonials__slider">
+               <div class="testimonials__item">
+                  <div class="testimonials__quote-icon">
+                     <svg width="83" height="69" viewBox="0 0 83 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_25_69)">
+                           <path
+                              d="M37.5609 52.8154C37.5609 48.5254 36.4397 44.9227 34.1972 42.0075C32.6079 39.999 30.4516 38.6795 27.7281 38.049C25.0468 37.425 22.5118 37.3811 20.2206 37.9125C19.4406 33.2812 20.7081 28.377 23.9256 23.1803C27.1496 17.9868 31.3063 14.0819 36.3958 11.4656L28.6884 0.375C24.7884 2.3055 21.0834 4.75275 17.6709 7.71188C14.2097 10.671 11.1384 14.0737 8.40844 17.9201C5.67844 21.7665 3.63094 26.1101 2.31469 31.0339C0.99844 35.9576 0.632816 40.9789 1.26169 46.1464C2.08069 52.9714 4.28419 58.4314 7.87219 62.4776C11.4569 66.5759 15.9224 68.625 21.2687 68.625C25.9731 68.625 29.8779 67.2113 32.9687 64.3447C36.0269 61.5367 37.5544 57.6887 37.5512 52.8007L37.5609 52.8154ZM82.0404 52.8154C82.0404 48.5254 80.9192 44.9227 78.6767 42.0075C77.0842 39.96 74.9278 38.6324 72.2076 38.0246C69.4776 37.4234 66.9751 37.3876 64.7001 37.9174C63.9201 33.3349 65.1388 28.4111 68.3661 23.1949C71.5836 18.0274 75.7371 14.1274 80.8266 11.4949L73.1387 0.375C69.2354 2.3055 65.5629 4.75113 62.1212 7.71188C58.6288 10.7152 55.5268 14.1447 52.8879 17.9201C50.1774 21.7714 48.1592 26.1101 46.8429 31.0339C45.5059 35.9538 45.1465 41.0882 45.7851 46.1464C46.5943 52.9714 48.7881 58.4314 52.3663 62.4776C55.9413 66.5466 60.3987 68.5811 65.7384 68.5811C70.4509 68.5876 74.3542 67.1625 77.4482 64.3058C80.5064 61.4978 82.0372 57.6497 82.0404 52.7618V52.8154Z"
+                              fill="#030919" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_25_69">
+                              <rect width="83" height="69" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </div>
+                  <div class="testimonials__content">
+                     <p class="testimonials__text">Після кількох безуспішних спроб знайти для доньки цікаві курси, ми
+                        натрапили на ці. Я дуже рада, що вона тепер не просто сидить за комп’ютером, а розвиває реальні
+                        навички в програмуванні. Заняття захоплюючі, викладачі завжди на зв'язку і допомагають, якщо
+                        виникають питання. Це те, що їй справді потрібно для майбутнього</p>
+                     <div class="testimonials__author">
+                        - <span>ЛЮДМИЛА</span>, МАМА ІРИНИ -
+                     </div>
+                  </div>
+               </div>
+               <div class="testimonials__item">
+                  <div class="testimonials__quote-icon">
+                     <svg width="83" height="69" viewBox="0 0 83 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_25_69)">
+                           <path
+                              d="M37.5609 52.8154C37.5609 48.5254 36.4397 44.9227 34.1972 42.0075C32.6079 39.999 30.4516 38.6795 27.7281 38.049C25.0468 37.425 22.5118 37.3811 20.2206 37.9125C19.4406 33.2812 20.7081 28.377 23.9256 23.1803C27.1496 17.9868 31.3063 14.0819 36.3958 11.4656L28.6884 0.375C24.7884 2.3055 21.0834 4.75275 17.6709 7.71188C14.2097 10.671 11.1384 14.0737 8.40844 17.9201C5.67844 21.7665 3.63094 26.1101 2.31469 31.0339C0.99844 35.9576 0.632816 40.9789 1.26169 46.1464C2.08069 52.9714 4.28419 58.4314 7.87219 62.4776C11.4569 66.5759 15.9224 68.625 21.2687 68.625C25.9731 68.625 29.8779 67.2113 32.9687 64.3447C36.0269 61.5367 37.5544 57.6887 37.5512 52.8007L37.5609 52.8154ZM82.0404 52.8154C82.0404 48.5254 80.9192 44.9227 78.6767 42.0075C77.0842 39.96 74.9278 38.6324 72.2076 38.0246C69.4776 37.4234 66.9751 37.3876 64.7001 37.9174C63.9201 33.3349 65.1388 28.4111 68.3661 23.1949C71.5836 18.0274 75.7371 14.1274 80.8266 11.4949L73.1387 0.375C69.2354 2.3055 65.5629 4.75113 62.1212 7.71188C58.6288 10.7152 55.5268 14.1447 52.8879 17.9201C50.1774 21.7714 48.1592 26.1101 46.8429 31.0339C45.5059 35.9538 45.1465 41.0882 45.7851 46.1464C46.5943 52.9714 48.7881 58.4314 52.3663 62.4776C55.9413 66.5466 60.3987 68.5811 65.7384 68.5811C70.4509 68.5876 74.3542 67.1625 77.4482 64.3058C80.5064 61.4978 82.0372 57.6497 82.0404 52.7618V52.8154Z"
+                              fill="#030919" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_25_69">
+                              <rect width="83" height="69" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </div>
+                  <div class="testimonials__content">
+                     <p class="testimonials__text">Мій син завжди був захоплений комп’ютерами, але йому бракувало
+                        реальних навичок. Після курсів з веб-розробки він сам почав створювати прості сайти, і я бачу,
+                        як змінилася його впевненість у собі. Дуже круто, що є можливість працювати над реальними
+                        проектами і одразу застосовувати теорію на практиці. Школа дає не тільки знання, а й мотивацію
+                     </p>
+                     <div class="testimonials__author">
+                        - <span>ІГОР</span>, БАТЬКО СЕРГІЯ -
+                     </div>
+                  </div>
+               </div>
+               <div class="testimonials__item">
+                  <div class="testimonials__quote-icon">
+                     <svg width="83" height="69" viewBox="0 0 83 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_25_69)">
+                           <path
+                              d="M37.5609 52.8154C37.5609 48.5254 36.4397 44.9227 34.1972 42.0075C32.6079 39.999 30.4516 38.6795 27.7281 38.049C25.0468 37.425 22.5118 37.3811 20.2206 37.9125C19.4406 33.2812 20.7081 28.377 23.9256 23.1803C27.1496 17.9868 31.3063 14.0819 36.3958 11.4656L28.6884 0.375C24.7884 2.3055 21.0834 4.75275 17.6709 7.71188C14.2097 10.671 11.1384 14.0737 8.40844 17.9201C5.67844 21.7665 3.63094 26.1101 2.31469 31.0339C0.99844 35.9576 0.632816 40.9789 1.26169 46.1464C2.08069 52.9714 4.28419 58.4314 7.87219 62.4776C11.4569 66.5759 15.9224 68.625 21.2687 68.625C25.9731 68.625 29.8779 67.2113 32.9687 64.3447C36.0269 61.5367 37.5544 57.6887 37.5512 52.8007L37.5609 52.8154ZM82.0404 52.8154C82.0404 48.5254 80.9192 44.9227 78.6767 42.0075C77.0842 39.96 74.9278 38.6324 72.2076 38.0246C69.4776 37.4234 66.9751 37.3876 64.7001 37.9174C63.9201 33.3349 65.1388 28.4111 68.3661 23.1949C71.5836 18.0274 75.7371 14.1274 80.8266 11.4949L73.1387 0.375C69.2354 2.3055 65.5629 4.75113 62.1212 7.71188C58.6288 10.7152 55.5268 14.1447 52.8879 17.9201C50.1774 21.7714 48.1592 26.1101 46.8429 31.0339C45.5059 35.9538 45.1465 41.0882 45.7851 46.1464C46.5943 52.9714 48.7881 58.4314 52.3663 62.4776C55.9413 66.5466 60.3987 68.5811 65.7384 68.5811C70.4509 68.5876 74.3542 67.1625 77.4482 64.3058C80.5064 61.4978 82.0372 57.6497 82.0404 52.7618V52.8154Z"
+                              fill="#030919" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_25_69">
+                              <rect width="83" height="69" fill="white" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </div>
+                  <div class="testimonials__content">
+                     <p class="testimonials__text">Мій син завжди цікавився комп'ютерами, але я не знала, як допомогти
+                        йому розвинути цей інтерес. Після курсів з веб-розробки він вже самостійно створив свій перший
+                        сайт! Дуже подобається підхід школи: все пояснюють доступно, є підтримка від викладачів, і
+                        головне – реальні практичні проекти</p>
+                     <div class="testimonials__author">
+                        - <span>ОЛЕНА</span>, МАМА АРТЕМА -
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+      <section class="contact" id="contact">
+         <div class="contact__container container">
+            <div class="contact__row">
+               <div class="contact__text">
+                  <h2 class="contact__title title">
+                     Залишились <span>питання</span> ?
+                  </h2>
+                  <p class="contact__paragraph">
+                     Перший урок – безкоштовно! Запишись зараз і зроби перший крок у IT
+                  </p>
+               </div>
+               <form class="contact__form">
+                  <input type="tel" name="phone" id="phone" placeholder="Номер телефону">
+                  <div>
+                     <p class="modal__seccess">Заявку успішно відправлено, ми зв'яжемося з вами найближчим часом</p>
+                     <p class="modal__error">Щось пішло не так під час відправки заявки, спробуйте ще раз</p>
+                  </div>
+                  <button type="submit" class="button">Відправити</button>
+               </form>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="footer__container container">
+            <div class="footer__row">
+               <div class="footer__logo">
+                  <img src="./images/logo.png" alt="Logo">
+               </div>
+               <h2 class="footer__title">
+                  ITishniki
+               </h2>
+               <div class="footer__socials">
+                  <a href="" class="footer__item">
+                     <img src="./images/footerIcon (1).svg" alt="Иконка социальной сети">
+                  </a>
+                  <a href="" class="footer__item">
+                     <img src="./images/footerIcon (2).svg" alt="Иконка социальной сети">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <section class="modal-overlay" id="modalOverlay">
+         <div class="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <h2 class="modal-title">ЗАЛИШИТИ <span>ЗАЯВКУ</span></h2>
+            <form id="modalForm">
+               <div class="form-group">
+                  <label for="name">ІМ'Я*</label>
+                  <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+               </div>
+               <div class="form-group">
+                  <label for="phone">НОМЕР ТЕЛЕФОНУ*</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+380" required>
+               </div>
+               <div class="form-group">
+                  <label>ОБЕРІТЬ ЗРУЧНИЙ СПОСІБ ДЛЯ ЗВ'ЯЗКУ*</label>
+                  <div class="radio-group">
+                     <label class="radio-label">
+                        <input type="radio" name="contact" value="Дзвінок" required> Дзвінок
+                     </label>
+                     <label class="radio-label">
+                        <input type="radio" name="contact" value="Telegram" required> Telegram
+                     </label>
+                     <label class="radio-label">
+                        <input type="radio" name="contact" value="Viber" required> Viber
+                     </label>
+                  </div>
+               </div>
+               <p class="modal__seccess">Заявку успішно відправлено, ми зв'яжемося з вами найближчим часом</p>
+               <p class="modal__error">Щось пішло не так під час відправки заявки, спробуйте ще раз</p>
+               <button type="submit" class="button submit-btn">ВІДПРАВИТИ</button>
+            </form>
+         </div>
+      </section>
+      <a href="#contact" class="contact-fixed">
+         <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+               d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.2652 15.5 20.5196 15.6054 20.7071 15.7929C20.8946 15.9804 21 16.2348 21 16.5V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21C15.4913 21 11.1673 19.2089 7.97918 16.0208C4.79107 12.8327 3 8.50868 3 4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H7.5C7.76522 3 8.01957 3.10536 8.20711 3.29289C8.39464 3.48043 8.5 3.73478 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
+               fill="#fff" />
+         </svg>
+      </a>
+   </main>
+
+   <script src="./script/script.js"></script>
+
+</body>
+
+</html>
