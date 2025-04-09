@@ -19,6 +19,7 @@
    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
    <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -27,6 +28,9 @@
    <main>
       <section class="hero">
          <div class="hero__row">
+            <div class="hero-bg__img bg__img">
+               <img src="./images/bg (2).png" alt="BG image">
+            </div>
             <div class="hero-bg">
                <div class="hero-bg__light"></div>
                <div class="hero-bg__dark"></div>
@@ -63,8 +67,8 @@
             </header>
             <div class="hero__container container">
                <div class="hero-left">
-                  <h1 class="hero-left__title">
-                     ITishniki – школа програмування для дітей
+                  <h1 class="hero-left__title typed-heading filled-heading filled-heading__black">
+                     <span>ITishniki</span> – школа програмування для дітей
                   </h1>
                   <div class="hero-left__img">
                      <img src="./images/heroLeft.png" alt="programmer">
@@ -76,17 +80,17 @@
                </div>
                <div class="hero-right">
                   <div class="hero-right__top">
-                     <p>Навчайся</p>
-                     <p>Навчайся</p>
-                     <p>Навчайся</p>
+                     <p class="typed-heading">Навчайся</p>
+                     <p class="typed-heading">Навчайся</p>
+                     <p class="typed-heading">Навчайся</p>
                   </div>
                   <div class="hero-right__img">
                      <img src="./images/heroRight.png" alt="display">
                   </div>
                   <div class="hero-right__bottom">
-                     <p>Розвивайся</p>
-                     <p>Розвивайся</p>
-                     <p>Розвивайся</p>
+                     <p class="typed-heading">Розвивайся</p>
+                     <p class="typed-heading">Розвивайся</p>
+                     <p class="typed-heading">Розвивайся</p>
                   </div>
                </div>
             </div>
@@ -94,10 +98,13 @@
       </section>
       <section class="about" id="about">
          <div class="about__row">
+            <div class="about-bg__img bg__img">
+               <img src="./images/bg (2).png" alt="Bg image">
+            </div>
             <div class="about__container container">
                <div class="about-header">
                   <div class="about-header__text">
-                     <h2 class="about-header__title">
+                     <h2 class="about-header__title filled-heading filled-heading__white">
                         <span>ITishniki</span> – школа, яка відкриває двері в IT-світ
                      </h2>
                      <p class="about-header__paragraph">
@@ -130,9 +137,9 @@
          <div class="product__container container">
             <div class="product__row">
                <div class="product-item">
-                  <h2 class="product-item__title title">
+                  <h2 class="product-item__title title bg__img filled-heading filled-heading__black">
                      Веб-розробка –
-                     створи <span>власний сайт</span>!
+                     створи <span>власний сайт</span> !
                   </h2>
                   <p class="product-item__paragraph">
                      Навчись створювати сучасні веб-сайти, додавай анімацію та функціонал
@@ -223,7 +230,7 @@
                   </div>
                   <div class="product-item-result">
                      <h3 class="product-item-result__title">
-                        Що отримаєш після курсу?
+                        Що отримаєш після курсу ?
                      </h3>
                      <ul class="product-item-result__menu">
                         <li class="product-item-result__list">Готовий сайт, який можна запустити в інтернеті</li>
@@ -250,9 +257,9 @@
                   </div>
                </div>
                <div class="product-item product-item__dark">
-                  <h2 class="product-item__title title">
+                  <h2 class="product-item__title title bg__img filled-heading filled-heading__white">
                      Розробка ігор –
-                     створи власну гру!
+                     створи <span>власну гру</span> !
                   </h2>
                   <p class="product-item__paragraph">
                      Поринь у світ розробки ігор, вивчаючи найпопулярніші технології
@@ -326,7 +333,7 @@
                   </div>
                   <div class="product-item-result">
                      <h3 class="product-item-result__title">
-                        Що отримаєш після курсу?
+                        Що отримаєш після курсу ?
                      </h3>
                      <ul class="product-item-result__menu">
                         <li class="product-item-result__list">Власну гру, яку можна завантажити в Google Play</li>
@@ -359,12 +366,15 @@
       </section>
       <section class="pricing">
          <div class="pricing__container container">
+            <div class="pricing-bg__img bg__img">
+               <img src="./images/bg (5).png" alt="bg image">
+            </div>
             <div class="pricing__image">
                <img src="./images/price.png" alt="">
             </div>
 
             <div class="pricing__content">
-               <h2 class="pricing__title title">
+               <h2 class="pricing__title title bg__img filled-heading filled-heading__black">
                   ВАРТІСТЬ НАВЧАННЯ У <span class="pricing__highlight">ITISHNIKI</span>
                </h2>
 
@@ -437,7 +447,10 @@
       <section class="road">
          <div class="road__container container">
             <div class="road__row">
-               <h2 class="road__title title">
+               <div class="road-bg__img bg__img">
+                  <img src="/images/bg (4).png" alt="bg image">
+               </div>
+               <h2 class="road__title title bg__img filled-heading filled-heading__black">
                   Як ми приводимо до <span>результату</span>
                </h2>
                <div class="road__img">
@@ -494,7 +507,11 @@
       </section>
       <section class="mentors">
          <div class="mentors__container container">
-            <h2 class="mentors__title title">ТВІЙ МЕНТОР В <span>IT</span></h2>
+            <div class="mentors-bg__img bg__img">
+               <img src="./images/bg (6).png" alt="bg image">
+            </div>
+            <h2 class="mentors__title title bg__img filled-heading filled-heading__black">ТВІЙ МЕНТОР В <span>IT</span>
+            </h2>
 
             <div class="mentors__slider js-mentors-slider">
                <div class="mentors__slide">
@@ -538,7 +555,16 @@
       </section>
       <section class="testimonials" id="testimonials">
          <div class="testimonials__container container">
-            <h2 class="testimonials__title title">НАШІ УЧНІ ВЖЕ СТВОРЮЮТЬ <span>ВЛАСНІ</span> ІГРИ ТА САЙТИ!</h2>
+            <div class="testimonials-bg__img bg__img">
+               <img src="./images/bg (7).png" alt="bg image">
+            </div>
+            <div class="testimonials-bg__img bg__img">
+               <img src="./images/bg (8).png" alt="bg image">
+            </div>
+            <h2 class="testimonials__title title bg__img filled-heading filled-heading__black">НАШІ УЧНІ ВЖЕ СТВОРЮЮТЬ
+               <span>ВЛАСНІ</span> ІГРИ ТА
+               САЙТИ!
+            </h2>
 
             <div class="testimonials__nav">
                <button class="testimonials__nav-btn testimonials__nav-btn--prev">
@@ -640,7 +666,7 @@
          <div class="contact__container container">
             <div class="contact__row">
                <div class="contact__text">
-                  <h2 class="contact__title title">
+                  <h2 class="contact__title title bg__img filled-heading filled-heading__black">
                      Залишились <span>питання</span> ?
                   </h2>
                   <p class="contact__paragraph">
@@ -661,9 +687,9 @@
       <footer class="footer">
          <div class="footer__container container">
             <div class="footer__row">
-               <div class="footer__logo">
+               <a href="#" class="footer__logo">
                   <img src="./images/logo.png" alt="Logo">
-               </div>
+               </a>
                <h2 class="footer__title">
                   ITishniki
                </h2>

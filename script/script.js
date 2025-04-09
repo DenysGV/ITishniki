@@ -130,7 +130,7 @@ function mentorsSlider() {
          contain: true,
          pageDots: false,
          prevNextButtons: true,
-         groupCells: true,
+         groupCells: 1,
          wrapAround: true
       });
    }
@@ -141,7 +141,6 @@ function testimonialsSlider() {
       cellAlign: 'center',
       contain: true,
       wrapAround: true,
-      prevNextButtons: false,
       pageDots: true,
       adaptiveHeight: true
    });
@@ -199,6 +198,128 @@ function sendForms() {
    if (contactForm) sendForm(contactForm, "contact");
 }
 
+function smoothScrollToAnchor(anchorId, duration = 800, offset = 0) {
+   // Получаем элемент по ID
+   const targetElement = document.getElementById(anchorId);
+
+   // Проверяем, существует ли элемент
+   if (!targetElement) {
+      console.error(`Элемент с ID "${anchorId}" не найден`);
+      return;
+   }
+
+   // Получаем текущую позицию прокрутки
+   const startPosition = window.pageYOffset;
+
+   // Вычисляем позицию элемента с учетом offset
+   const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+
+   // Разница между начальной и конечной позициями
+   const distance = targetPosition - startPosition;
+
+   // Время начала анимации
+   let startTime = null;
+
+   function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+
+      // Прогресс анимации от 0 до 1
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+
+      // Функция плавности (easeInOutQuad)
+      const ease = progress => (progress < 0.5
+         ? 2 * progress * progress
+         : 1 - Math.pow(-2 * progress + 2, 2) / 2);
+
+      // Выполняем скролл
+      window.scrollTo(0, startPosition + distance * ease(progress));
+
+      // Продолжаем анимацию, если она не завершена
+      if (progress < 1) {
+         requestAnimationFrame(animation);
+      }
+   }
+
+   // Запускаем анимацию
+   requestAnimationFrame(animation);
+}
+
+function smoothScroll() {
+   // Находим все ссылки, которые начинаются с #
+   const anchorLinks = document.querySelectorAll('a[href^="#"]:not([href="#"])');
+
+   // Добавляем обработчик на каждую ссылку
+   anchorLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+         e.preventDefault(); // Отменяем стандартное поведение ссылки
+
+         // Получаем ID якоря из href (убираем #)
+         const anchorId = this.getAttribute('href').substring(1);
+
+         // Вызываем функцию плавного скролла
+         smoothScrollToAnchor(anchorId, 800, 50); // 800ms, 50px offset
+      });
+   });
+}
+
+function typedElems() {
+   const heading = document.querySelectorAll(".typed-heading");
+
+   heading.forEach(item => {
+      const itemHtml = item.innerHTML
+      item.innerHTML = ''
+
+      console.log(item);
+
+
+      new Typed(item, {
+         strings: [itemHtml],
+         typeSpeed: item.nodeName == 'P' ? 100 : 1,
+         backSpeed: 20,
+         startDelay: 100,
+         loop: false,
+         contentType: "html",
+         showCursor: false,
+      });
+   })
+}
+
+function fillTitles() {
+   document.addEventListener('scroll', () => {
+      const elements = document.querySelectorAll('.filled-heading');
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      elements.forEach((element) => {
+         const rect = element.getBoundingClientRect();
+
+         if (rect.top < windowHeight && rect.bottom > 0) {
+            const scrollPercentage = Math.min((windowHeight - rect.top) / (windowHeight + rect.height), 1);
+            element.style.backgroundPosition = `${100 - scrollPercentage * 110}% 0`;
+         }
+      });
+   });
+}
+
+function parallax() {
+   // JavaScript для анимации
+   const items = document.querySelectorAll('.bg__img');
+
+   window.addEventListener('mousemove', (e) => {
+      const { clientX, clientY } = e;
+
+      items.forEach((item) => {
+         const index = parseFloat(item.dataset.index) || 1; // Сила движения зависит от data-index
+         const offsetX = (clientX - window.innerWidth / 2) * (index / 50);
+         const offsetY = (clientY - window.innerHeight / 2) * (index / 50);
+
+         // Применяем сдвиг
+         item.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      });
+   });
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
    burger()
    productCollapse()
@@ -208,4 +329,8 @@ document.addEventListener('DOMContentLoaded', function () {
    testimonialsSlider()
    phoneMask()
    sendForms()
+   smoothScroll()
+   typedElems()
+   fillTitles()
+   parallax()
 });
