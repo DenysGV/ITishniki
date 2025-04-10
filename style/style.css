@@ -1811,6 +1811,12 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 	.mentors__slide {
 		width: 100%;
 	}
+	.mentor-card__name {
+		font-size: 20px;
+	}
+	.mentor-card__desc {
+		font-size: 16px;
+	}
 
 	.testimonials__title {
 		font-size: 36px;
