@@ -366,10 +366,16 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 	padding: 50px 0;
 	position: relative;
 }
-.about-bg__img {
+.about-bg__img:nth-child(1) {
 	position: absolute;
 	bottom: -100px;
 	right: -200px;
+	z-index: -1;
+}
+.about-bg__img:nth-child(2) {
+	position: absolute;
+	top: -50px;
+	left: -200px;
 	z-index: -1;
 }
 .about__container {
@@ -891,7 +897,7 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 .pricing-bg__img {
 	position: absolute;
 	z-index: -1;
-	top: -75px;
+	top: -25px;
 	left: -50px;
 }
 
@@ -1115,13 +1121,13 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 }
 
 .mentor-card__name {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 700;
 	margin: 0 0 5px;
 }
 
 .mentor-card__desc {
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.5;
 }
 
@@ -1133,6 +1139,8 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 	transition: 0.3s all;
 	top: 40%;
 	cursor: pointer;
+	width: 60px !important;
+	height: 60px !important;
 }
 .flickity-button:focus,
 .flickity-prev-next-button:focus,
@@ -1357,6 +1365,7 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 	background: #030919;
 	border: 2px solid #fff;
 	position: fixed;
+	z-index: 5;
 	bottom: 50px;
 	left: 50px;
 	display: -webkit-box;

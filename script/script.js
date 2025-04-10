@@ -141,6 +141,7 @@ function testimonialsSlider() {
       cellAlign: 'center',
       contain: true,
       wrapAround: true,
+      prevNextButtons: false,
       pageDots: true,
       adaptiveHeight: true
    });
