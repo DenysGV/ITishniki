@@ -1084,7 +1084,7 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 }
 
 .mentors__slide {
-	width: calc(33.3% - 12.5px);
+	width: calc(25% - 15.5px);
 	margin-right: 20px;
 }
 
@@ -1124,10 +1124,11 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 	font-size: 24px;
 	font-weight: 700;
 	margin: 0 0 5px;
+	text-transform: uppercase;
 }
 
 .mentor-card__desc {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
@@ -1652,6 +1653,11 @@ background: linear-gradient(to right, #fff 0%, #fff 50%, #929292 50%, #929292 10
 	}
 	.road-item {
 		width: calc(50% - 15px);
+	}
+
+	.mentors__slide {
+		width: calc(33.3% - 12.5px);
+		margin-right: 20px;
 	}
 
 
