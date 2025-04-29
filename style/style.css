@@ -717,7 +717,7 @@ right: -17px;
 }
 
 .product-item.active .product-item-plan{
-max-height: 1000px;
+max-height: 1400px;
 padding: 15px 15px 0 15px;
 }
 .product-item.active .product-item__button svg {

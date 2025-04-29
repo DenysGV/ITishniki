@@ -296,6 +296,10 @@ function fillTitles() {
 
          if (rect.top < windowHeight && rect.bottom > 0) {
             const scrollPercentage = Math.min((windowHeight - rect.top) / (windowHeight + rect.height), 1);
+            if (element.tagName == "H1") {
+               element.style.backgroundPosition = `${150 - scrollPercentage * 110}% 0`;
+               return
+            }
             element.style.backgroundPosition = `${100 - scrollPercentage * 110}% 0`;
          }
       });
