@@ -1082,6 +1082,9 @@ color: #3E87F0;
 .mentors__slider {
 margin: 0 auto;
 }
+.mentors__slider .flickity-viewport {
+	overflow: visible;
+}
 
 .mentors__slide {
 width: calc(33.3% - 12.5px);
