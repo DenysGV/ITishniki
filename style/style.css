@@ -1822,7 +1822,10 @@ width: 100%;
 	.mentor-card__desc {
 		font-size: 16px;
 	}
-
+	.mentors__slider .flickity-viewport {
+		min-height: 510px !important;
+		max-height: 510px !important;
+	}
 .testimonials__title {
 font-size: 36px;
 }
@@ -1951,6 +1954,10 @@ gap: 15px;
 
 	.mentor-card__image {
 	height: 300px;
+	}
+	.mentors__slider .flickity-viewport {
+		min-height: 435px !important;
+		max-height: 435px !important;
 	}
 
 	.testimonials__slider {
